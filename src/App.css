@@ -1,0 +1,39 @@
+header{
+  height: 50px;
+  background: linear-gradient(90deg, rgb(26, 241, 241) 0%,rgb(180, 176, 176) 100%);
+  color: rgb(26, 14, 14);
+  line-height: 50px;
+  text-align: center;
+}
+footer{
+  height: 30px;
+  line-height: 30px;
+  font-size: 8pt;
+  color: rgb(244, 234, 234);
+  background: linear-gradient(90deg, rgb(113, 211, 190) 0%, rgb(164, 234, 164) 100%);
+  text-align: center;
+}
+section{
+  height: calc(100% - 80px);
+  background: linear-gradient(90deg, rgb(231, 202, 202) 0%, rgb(193, 27, 27));
+  overflow: auto;
+  text-align: center;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px ;
+}
+nav ul{
+  /* list-style: none; */
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav ul li{
+    margin: 0 15px;
+}

@@ -22,6 +22,8 @@ section{
 nav{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 nav .logo{
   font-size: 20px;
@@ -29,11 +31,51 @@ nav .logo{
   margin-left: 15px ;
 }
 nav ul{
-  /* list-style: none; */
+  list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
 nav ul li{
     margin: 0 15px;
+}
+nav.menu{
+  margin-right: 15px;
+  font-size: 20pt;
+  display: none;
+  cursor: pointer;
+}
+@media(max-width: 768px){
+  nav .menu{
+    display:contents;
+  }
+  nav ul{
+    /* display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: white;
+    width: 100%; */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,);
+    display: none;
+    flex-direction: column;
+    left: 0;
+    margin 0;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    background: white;
+  }
+  nav ul.active{
+    display: flex;
+  }
+  nav ul li{
+    background: linear-gradient(90deg, rgb(180, 180, 183) 0%, rgb(175, 235, 232) 100%);
+    padding: 0;
+    margin: 2px 0;
+  }
 }
